@@ -1,0 +1,193 @@
+@import url(_nav.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+/**框架預設**/
+body{
+	font-family: ‘cwTeXYen’, serif;
+	letter-spacing:2px;
+	background-color: #EEFEFE;}
+header{
+	background-color: #CCEEFF;
+	height: 52px;
+	padding: 5px;
+	color: #444;
+	position:fixed ;
+	top:0;
+	left:0;
+	right:0;
+	z-index:555;}
+a{
+	text-decoration:none;
+	color: #444;}
+a:hover {
+background-color:#D5F3FF;
+color:#F88;}
+div {
+    display: block;
+	width: 100%;}
+li{
+	display: block;}
+p:before{
+	content:"沈聖淵";
+	visibility:hidden;
+	font-size:60%;}
+/**標籤設計-頭**/
+header div .nav{
+	width : 800 px;
+	z-index: 99;
+	position: absolute;
+    top: 0px;
+	right:0px;
+	padding: 10px;}
+.nou{
+	display:none;}
+.site-logo{
+	max-width:140px;
+	padding:1px 5px;
+	background-color: #CEF2FF;
+	font-weight:900;
+	position: absolute;
+    top: 19px;
+	letter-spacing:2px;}
+.header-meu{
+	display:none;
+	padding: 15px;
+	position: absolute;
+    bottom: 0px;
+    right: 0px;
+	font-size:130%;
+	z-index:554;}
+/**標籤設計-內文**/
+.container{
+	width: 100%;
+	background-color: #CEF;
+	float:left;
+	height:auto;
+	word-break: break-all;
+	text-align:left;}
+.hi{
+		min-height:10px;
+	}
+.content-1 p,.content-1 h1,.content-1 h2{
+	padding:0px 10%;
+	font-size:inherit;
+	display: block;}
+.content-2 p,.content-2 h1,.content-2 h2{
+	font-size:inherit;
+	padding:0px 30px;}
+.site-main{
+	padding-top: 44px;
+	margin:auto;
+	width: 80%;
+	display: block;
+	background-color: #CEF;}
+.site-main div{
+	background-color: #D2F2FF;}
+.content-1{
+	display: block;
+	width: inherit;
+	word-break: break-all;
+	clear:both;}
+.content-1 img{
+	width: inherit;}
+.content-2{
+	display: block;
+	float:left;
+	word-break: break-all;
+	width:48%;
+	padding:1%;}
+.content-2 img{
+	width: 100%;}
+.site-main .container:last-child{
+	padding-bottom:10%;}
+.site-main .container:first-child{
+    padding-top: 18px;}
+/**標籤設計-腳**/
+.site-footer{
+	background-color: #CCEEFF!important;
+	display: block;
+	width: 100%;
+	font-size:smaller;}
+.site-footer div {
+background-color: #CEEEFE;}
+footer div .nav{
+	float:left;
+	padding: 4% 5%;}
+footer div .nav:first-child{
+	padding-left:11%;}
+.f-link{
+	height:25px;
+	display: block;}
+.Copyr{
+text-align:center;
+font-size:60%;
+clear:both;}
+/**響應式設計**/
+@media (min-width: 770px) {
+	body{
+		font-size:130%;}
+	.site-logo{
+		top: 15px !important;
+		padding:1px 10px;}
+	.nav-link{
+		padding: 7px;}
+	.site-main{
+		padding-top: 41px;}
+	.hi{
+		min-height:120px;
+	}
+}
+
+@media (min-width: 426px) and (max-width: 769px) {
+	body{
+		font-size:large;}
+	.content-2 img{
+		min-width: 150px;}
+	.site-logo,.nav{
+		top: 17px;}
+	.hi{
+		min-height:60px;
+	}	}
+@media (max-width: 425px) {
+	header div .nav {
+		background-color: #CCEEFF;
+		display:none ;
+		z-index:500;
+		font-size:large;}
+	body{
+		font-size:90%;}
+	.site-logo{
+		font-weight:500;
+		top: 18px;
+		max-width:100px;}
+	.header-meu{
+		display:block ;}
+	.site-main{
+		padding-top: 44px;
+		margin:auto;
+		width: 90%;}
+	header div .nav:target {
+		width:80px;
+		float:right;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		display:block!important;}
+	.nou{
+		display:block;}
+	.hi{
+		min-height:30px;
+	}
+	.h1{
+		min-width:72px;
+		clear:both;
+	}
+	header div nav a {
+		width: 80%;
+		border-bottom:2px solid #888;}
+	header div nav a:first-child {
+		margin-top:52px!important;}
+	.content-2{
+		min-width:80%;}
+	.content-2 img{
+	margin-left:10%!important;
+		display:block ;}}
